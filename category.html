@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap Template Atlas</title>
+    <meta name="description" content="Free bootstrap template Atlas">
+    <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
+    <!-- custom.css -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- font-awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    
+    <!-- AOS -->
+    <link rel="stylesheet" href="css/aos.css">
+    <style>
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  height: 350px;
+  margin: 30px;
+    margin-bottom: 5%;
+
+  /* padding: 20px; */
+  background-color:#d6f3ea;
+}
+.card img{
+    width: 100%;
+    height: 200px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color:#00FFAD;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  font-weight: bolder;
+}
+
+nav ul li a:hover {
+  color: #050506;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  width: 300px;
+  direction: rtl;
+
+}
+
+input[type="search"] {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  font-size: 16px;
+}
+
+input[type="search"]::placeholder {
+  color: #ccc;
+}
+
+
+.card {
+  width: 300px;
+    margin-bottom: 5%;
+  background: white;
+  border-radius: 30px;
+  box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
+  transition: 0.2s ease-in-out;
+}
+
+.img {
+  width: 100%;
+  height: 50%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background: linear-gradient(#e66465, #9198e5);
+  display: flex;
+  align-items: top;
+  justify-content: right;
+}
+
+.save {
+  transition: 0.2s ease-in-out;
+  border-radius: 10px;
+  margin: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+}
+
+.save .svg {
+  transition: 0.2s ease-in-out;
+  width: 15px;
+  height: 15px;
+}
+
+.icon-box {
+  margin-top: 15px;
+  width: 70%;
+  padding: 10px;
+  background-color: #e3fff9;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.icon-box svg {
+  width: 17px;
+}
+
+.text .h3 {
+  font-family: 'Lucida Sans' sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: black;
+}
+
+.text .p {
+  font-family: 'Lucida Sans' sans-serif;
+  color: #999999;
+  font-size: 13px;
+}
+
+.icon-box .span {
+  margin-left: 10px;
+  font-family: 'Lucida Sans' sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #9198e5;
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+}
+
+.save:hover {
+  transform: scale(1.1) rotate(10deg);
+}
+
+.save:hover .svg {
+  fill: #ced8de;
+}
+.pagination {
+   
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color:#00FFAD;
+  color: white;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+    </style>
+</head>
+<!-- 00FFAD -->
+
+<body>
+    <div class="jumbotron jumbotron-fluid" id="banner" style="background-image: url(img/banner-bk.jpg);margin-bottom: 5%;">
+        <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#" style="color: black;">Category</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><input type="search" placeholder="Search..."></li>
+            </ul>
+          </nav>
+        <div class="container text-center text-md-left">
+            <header>
+                <div class="row justify-content-between">
+                    <div class="col-2">
+                        <img src="img/logo.png" alt="logo">
+                    </div>
+                    <div class="col-6 align-self-center text-right">
+                        <a href="#" class="text-white lead">Get Early Access</a>
+                    </div>
+                </div>
+            </header>
+            <h1 data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="display-3 text-white font-weight-bold my-5">
+            	The Pharaohs
+            </h1>
+            <p data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="lead text-white my-4">
+                A global marketing company that provides marketing <br>services for all magazines
+            </p>
+        </div>
+    </div>
+    <section style="padding-top: 10%;padding-bottom: 5%;">
+    <div class="card-container">
+        <a href="plane_sub_caty.html" style="text-decoration: none;">
+            <div class="card">
+                <img src="img/maxresdefault.jpg" alt="Image 1">
+                <h3 style="color: #00FFAD;margin: 5px;">Corporate airline</h3>
+                <p style="padding: 5px;color:#192440 ;">We provide you with the best pilot companies in the world</p>
+              </div>
+        </a>
+        <a href="cloth_sub_caty.html" style="text-decoration: none;">
+            <div class="card">
+            <img src="img/clothes.jpg" alt="Image 2">
+            <h3 style="color: #00FFAD;margin: 5px;">Clothing brands</h3>
+            <p style="padding: 5px;color:#192440 ;">Some company specialized in selling clothes and international brands</p>
+            </div>
+        </a>
+        <a href="lomousin_sub_caty.html" style="text-decoration: none;">
+        <div class="card">
+          <img src="img/Limousine-5.jpg" alt="Image 3">
+          <h3 style="color: #00FFAD;margin: 5px;">Limousine</h3>
+          <p style="padding: 5px;color:#192440 ;">Limousine companies and car rentals</p>
+        </div>
+    </a>
+      </div>
+      <div class="card-container">
+        <a href="real_estate_company_sub_caty.html" style="text-decoration: none;">
+        <div class="card">
+          <img src="img/house1.jpg" alt="Image 1">
+          <h3 style="color: #00FFAD;margin: 5px;">Real estate companys</h3>
+          <p style="padding: 5px;color:#192440 ;">A real estate company for renting and
+            selling real estate</p>
+        </div>
+    </a>
+        <div class="card">
+            <a href="Software_sub_caty.html" style="text-decoration: none;">
+          <img src="img/software1.jpg" alt="Image 2">
+          <h3 style="color: #00FFAD;margin: 5px;">Software Organizations</h3>
+          <p style="padding: 5px;color:#192440 ;">Software compony for it solution and programing</p>
+        </div>
+    </a>
+    <a href="marketing_sub_caty.html" style="text-decoration: none;">
+        <div class="card">
+          <img src="img/marketing.jpg" alt="Image 3">
+          <h3 style="color: #00FFAD;margin: 5px;">Digital Marketing</h3>
+          <p style="padding: 5px;color:#192440 ;">Best Digital Marketing Organizations</p>
+        </div>
+    </a>
+      </div>
+      <div class="card-container">
+        <a href="elearing_sub_caty.html" style="text-decoration: none;">
+        <div class="card">
+          <img src="img/elearing1.jpg" alt="Image 1">
+          <h3 style="color: #00FFAD;margin: 5px;">E-Learing</h3>
+          <p style="padding: 5px;color:#192440 ;">The best global platforms for distance education</p>
+        </div>
+    </a>
+    <a href="hotel_sub_caty.html" style="text-decoration: none;">
+        <div class="card">
+          <img src="img/download.jpg" alt="Image 2">
+          <h3 style="color: #00FFAD;margin: 5px;">Hotels</h3>
+            <p style="padding: 5px;color:#192440 ;">The world's most luxurious hotels at the best prices</p>
+        </div>
+    </a>
+    <a href="torism_sub_caty.html" style="text-decoration: none;">
+        <div class="card">
+          <img src="img/tourism1.jpg" alt="Image 3">
+          <h3 style="color: #00FFAD;margin: 5px;">Torism Compony</h3>
+          <p style="padding: 5px;color:#192440 ;">We provide you with the best pilot companies in the world</p>
+        </div>
+        </a>
+        
+      </div>
+    
+    </section>
+    <section style="align-items: center;text-align: center;padding-bottom: 5%;">
+        <div class="pagination" >
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+          </div>
+    </section>
+    
+      <div class="jumbotron jumbotron-fluid" id="copyright">
+        <div class="container">
+            <div class="row justify-content-between">
+            	<div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
+                    Copyright © 2018 Chen, Yi-Ya.
+                </div>
+                <div class="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
+                    <a href="#" class="d-inline-block text-center ml-2">
+                    	<i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="d-inline-block text-center ml-2">
+                    	<i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="d-inline-block text-center ml-2">
+                    	<i class="fa fa-medium" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="d-inline-block text-center ml-2">
+                    	<i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     <script src="js/aos.js"></script>
+     <script>
+       AOS.init({
+       });
+     </script>
+ </body>
+ 
+ </html>
